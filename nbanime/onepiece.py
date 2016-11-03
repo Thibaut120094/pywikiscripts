@@ -32,5 +32,5 @@ if nbepisode > oldnbepisode:
 
 else :
   print(u'Page not saved.')
-  print(u'Cruchyroll: %d' % nbepisode)
+  print(u'Crunchyroll: %d' % nbepisode)
   print(u'Wikipedia: %d' % oldnbepisode)
