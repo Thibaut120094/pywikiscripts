@@ -14,4 +14,4 @@ for page in pywikibot.site.APISite.categorymembers(site, category, namespaces=[0
    print title
    if pattern:
      page.text = re.sub(regex1, "", page.text, flags=re.MULTILINE)
-     page.save(u"Les liens interlangues sont maintenant gérés automatiquement par [[:mw:Extension:Cognate]].")
+     page.save(u"Retrait des liens interlangues qui sont maintenant gérés automatiquement par [[:mw:Extension:Cognate]].")
