@@ -9,7 +9,7 @@ category = pywikibot.Category(site, u"japonais")
 
 for page in pywikibot.site.APISite.categorymembers(site, category, namespaces=[0]):
    title = page.title()
-   regex1 = ur"^\[\[\w{1,3}\:%s\]\]\s*$" % title
+   regex1 = ur"^\[\[(\w{1,6}|zh-min-nan)\:%s\]\]\s*$" % title
    pattern = re.findall(regex1, page.text, flags=re.MULTILINE)
    print title
    if pattern:
